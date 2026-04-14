@@ -169,34 +169,49 @@ Instructions
               Answer
               <svg class="chevron" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <div class="file-preview-box">
-                  <div class="file-preview-label">
-                    <svg viewBox="0 0 16 16"><path d="M4 2h6l4 4v8H4V2z"/><path d="M10 2v4h4"/></svg>
-                    answer.txt
-                  </div>
-Paste your answer content here.
-
-Include your written answers, solutions, or outputs
-as read from the submitted document.
-
-Replace this placeholder with your actual answer text.
-                </div>
-              </div>
-            </div>
+           <div class="accordion-content">
+  <div class="accordion-inner">
+    <div class="file-preview-box">
+      <div class="file-preview-label">
+        <svg viewBox="0 0 5 0"><path d="M4 2h6l4 4v8H4V2z"/><path d="M10 2v4h4"/></svg>
+        Section_LastName_FirstName_Activity.pdf
+      </div>
+      
+      <div class="pdf-wrapper">
+        <embed 
+          src="../assets/BSIT2-4_Cortas_MarkJenel_CodeAnalysisActivity.pdf#toolbar=0&navpanes=0&scrollbar=1" 
+          type="application/pdf" 
+          width="100%" 
+          height="700px" 
+        />
+      </div>
+      
+    </div>
+  </div>
+</div>
 
             <button class="accordion-trigger" style="border-bottom:none;">
               Explanation / Reflection
               <svg class="chevron" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <label class="reflection-label">Your reflection</label>
-                <textarea class="reflection-area" placeholder="Write your explanation and learnings for this activity here..."></textarea>
-              </div>
-            </div>
+          <div class="accordion-content">
+  <div class="accordion-inner">
+    <p class="reflection-text">
+     
+This activity explores the fundamental concepts of Object References and Memory Management in Java. 
+By tracing the TestStudent class, we can see how objects are stored in the Heap while their reference variables 
+reside in the Stack.
+The core of this exercise is understanding that assigning s3 = s2 does not create a new object, but rather makes both variables point to the same memory address. Consequently, when we modify s3.name to "Ana," it directly affects s2 as well, because they share the same instance.
 
+Reflection
+This activity provided a clear "aha!" moment regarding how Java handles objects versus primitive data. 
+I realized that variables like s1 and s2 are not the objects themselves, but merely pointers or addresses to 
+where the data lives. Mastering this distinction is crucial for avoiding bugs in larger projects, especially when 
+passing objects into methods or cloning data. It reinforced the importance of logical tracing before writing code 
+to anticipate how memory changes impact the final output.
+    </p>
+  </div>
+</div>
           </div>
         </div>
 
@@ -237,32 +252,40 @@ Replace this placeholder with your actual answer text.
               Answer
               <svg class="chevron" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <div class="file-preview-box">
-                  <div class="file-preview-label">
-                    <svg viewBox="0 0 16 16"><path d="M4 2h6l4 4v8H4V2z"/><path d="M10 2v4h4"/></svg>
-                    answer.txt
-                  </div>
-Paste your answer content here.
-
-Include written answers, solutions, or document outputs for Activity 2.
-
-Replace this placeholder with your actual answer text.
-                </div>
-              </div>
-            </div>
-
+          <div class="accordion-content">
+  <div class="accordion-inner">
+    <div class="file-preview-box">
+      <div class="file-preview-label">
+        <svg viewBox="0 0 16 16"><path d="M4 2h6l4 4v8H4V2z"/><path d="M10 2v4h4"/></svg>
+        Section_LastName_FirstName_Activity.pdf
+      </div>
+      
+      <div class="pdf-wrapper">
+        <embed 
+          src="../assets/BSIT2-4_Cortas_MarkJenel_OperatorsActivity2.pdf#toolbar=0&navpanes=0&scrollbar=1" 
+          type="application/pdf" 
+          width="100%" 
+          height="700px" 
+        />
+      </div>
+      
+    </div>
+  </div>
+</div>
             <button class="accordion-trigger" style="border-bottom:none;">
               Explanation / Reflection
               <svg class="chevron" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <label class="reflection-label">Your reflection</label>
-                <textarea class="reflection-area" placeholder="Write your explanation and learnings for this activity here..."></textarea>
-              </div>
-            </div>
+           <div class="accordion-content">
+  <div class="accordion-inner">
+    <p class="reflection-text">
+     
+This activity involved a comprehensive exploration of Java operators, ranging from bitwise and 
+ternary logic to the intricacies of unary and assignment operations. By 
+constructing programs to meet specific output requirements without hardcoding, I gained a deeper understanding of how data is manipulated at both the logical and binary levels. The most significant challenge was navigating Part II’s "tricky" increment and decrement cases, which required a precise grasp of prefix versus postfix notation and the Java order of operations. This forced a disciplined, step-by-step tracing of variable states within single expressions to ensure the final numeric results remained accurate.  I realized that while arithmetic operators are foundational, mastering bitwise and shorthand assignment operators allows for much more efficient and professional code. Overall, this exercise moved me beyond simple calculations and into the realm of true algorithmic thinking, highlighting how subtle changes in operator usage can drastically alter a program's state. This experience has significantly boosted my confidence in handling complex mathematical logic and state management in my future software development projects.
+    </p>
+  </div>
+</div>
 
           </div>
         </div>
@@ -318,6 +341,176 @@ Academic Integrity Policy
         • Sharing source code
         • Downloading solutions from the internet
     Students with identical programs may receive a score of 0.
+                </div>
+              </div>
+            </div>
+
+            <button class="accordion-trigger">
+              Answer
+              <svg class="chevron" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-inner">
+                <div class="code-block-wrap">
+                  <div class="code-block-bar">
+                    <div class="code-dots"><i></i><i></i><i></i></div>
+                    <span>Main.java</span>
+                  </div>
+                  <pre><code>import java.util.Scanner;
+
+public class BSIT2_4_Cortas_MarkJenel_ATMWithdrawalLimit {
+
+    public static void main(String []args){
+         Scanner in = new Scanner(System.in);
+
+        double balance = 9000.0;
+        int choice = 0;
+        do{
+            System.out.println("====ATM Menu====");
+            System.out.println("1. Check Balance");
+            System.out.println("2. Deposit");
+            System.out.println("3. Withdraw");
+            System.out.println("4. Exit");
+
+            System.out.println("Enter choice: ");
+            choice = in.nextInt();
+
+            switch(choice){
+                case 1:
+                    System.out.println("Balance: " + balance);
+                    break;
+                case 2:
+                    System.out.println("Enter Deposit Amount: ");
+                    double amount = in.nextDouble();
+                    balance = balance + amount;
+                    break;
+                case 3:
+                    System.out.println("Enter amount to withdraw: ");
+                    double withdraw = in.nextDouble();
+
+                    if(withdraw <= 0) {
+                        System.out.println("Transaction Error: Please enter amount bigger than 0.");
+                        break;
+                    }else if(withdraw > 3000){
+                        System.out.println("Transaction Error: Withdrawal Limit Exceeded");
+                        break;
+                    }else if(withdraw > balance){
+                        System.out.println("Transaction Error: Withdrawal Limit Exceeded");
+                        break;
+                    }else{
+                        System.out.println("Withdrawing " + withdraw + " from balance");
+                        balance -= withdraw;
+                        break;
+                    }
+                case 4:
+                    System.out.println("Exiting the program..");
+                    break;
+            }
+        }while(choice != 4);
+    }
+}
+
+</code></pre>
+                </div>
+              </div>
+            </div>
+
+            <button class="accordion-trigger" style="border-bottom:none;">
+              Explanation / Reflection
+              <svg class="chevron" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-content">
+  <div class="accordion-inner">
+    <p class="reflection-text">
+     
+This activity involved developing a Java-based ATM system that balances user-driven menus with strict transactional business rules. By implementing a 3,000-peso withdrawal limit against an initial 9,000-peso balance, I practiced using nested if-else logic within a switch statement to ensure data integrity. The do-while loop was essential for creating a persistent interface, allowing for multiple operations like depositing and checking balances before the user chooses to exit.  I learned how to effectively validate user input to prevent "Withdrawal Limit Exceeded" errors while keeping the balance variable updated in real-time. This project specifically reinforced how control structures are used to manage state and enforce constraints in a functional application. Ultimately, it highlighted the importance of defensive programming when handling financial logic to ensure a reliable and error-free user experience.
+    </p>
+  </div>
+</div>
+
+          </div>
+        </div>
+
+        <!-- ── Activity 4 (Code Block) ── -->
+        <div class="activity-card">
+          <div class="activity-card-header">
+            <span class="activity-num-badge">ACT-04</span>
+            <span class="activity-title">Midterm Activity #4 – Student Library Borrowing System with Penalty Counter</span>
+          </div>
+          <div class="accordion-body">
+
+            <button class="accordion-trigger">
+              Instruction
+              <svg class="chevron" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-inner">
+                <div class="file-preview-box">
+                  <div class="file-preview-label">
+                    <svg viewBox="0 0 16 16"><path d="M4 2h6l4 4v8H4V2z"/><path d="M10 2v4h4"/></svg>
+                    instruction.txt
+                  </div>
+Objective
+Create a Java program that simulates a student payment system using decision structures, 
+loops, and user-defined validation.
+Program Requirements
+1. Create a Java program named:
+    StudentPaymentSystemLastName (Example: StudentPaymentSystemBedis)
+2. Ask the user to input: 
+    o Student Name 
+    o Student ID 
+    o Total Tuition Fee 
+3. Display the menu: 
+    ===== PAYMENT MENU =====
+    1. Pay Tuition
+    2. Check Balance
+    3. Apply Discount
+    4. Exit
+Program Rules
+    General Rules
+      • Use switch statement to process menu options 
+      • Use do-while loop to repeat the program until Exit 
+      • Use nested if statements for validation 
+      • Use a counter variable to track number of transactions 
+    Payment Rules
+      1. Pay Tuition
+        • Ask for payment amount 
+        • Validate: 
+            o If payment > remaining balance → display: Invalid Payment
+            o Else → deduct from balance 
+        • Increment transaction counter 
+      2. Check Balance
+        • Display remaining balance 
+        • Increment transaction counter 
+      3. Apply Discount
+        • Ask user if they are: 
+            o Regular Student 
+            o Scholar 
+        Conditions: 
+            • If Scholar → 20% discount 
+            • If Regular → no discount 
+            • Discount applies only once 
+      4. Exit
+            • Display: 
+                o Student Name 
+                o Total Transactions 
+                o Final Balance 
+            • End program 
+ 
+ 
+Additional Conditions
+    • Prevent negative balance 
+    • Prevent multiple discount applications 
+    • Show message: No remaining balance if fully paid 
+
+Submission Format
+    • Submit the Java source code file (.java) 
+    • Filename format: 
+Section_LastName_FirstName_StudentPaymentSystem.java
+    • Include screenshots showing: 
+        o User input 
+        o Processing 
+        o Final output
                 </div>
               </div>
             </div>
@@ -422,6 +615,7 @@ public class BSIT2_4_Cortas_MarkJenel_StudentPaymentSystem {
     }
     }
 
+
 </code></pre>
                 </div>
               </div>
@@ -432,178 +626,13 @@ public class BSIT2_4_Cortas_MarkJenel_StudentPaymentSystem {
               <svg class="chevron" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="accordion-content">
-              <div class="accordion-inner">
-                <label class="reflection-label">Your reflection</label>
-                <textarea class="reflection-area" placeholder="Write your explanation and learnings for this activity here..."></textarea>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- ── Activity 4 (Code Block) ── -->
-        <div class="activity-card">
-          <div class="activity-card-header">
-            <span class="activity-num-badge">ACT-04</span>
-            <span class="activity-title">Midterm Activity #4 – Student Library Borrowing System with Penalty Counter</span>
-          </div>
-          <div class="accordion-body">
-
-            <button class="accordion-trigger">
-              Instruction
-              <svg class="chevron" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <div class="file-preview-box">
-                  <div class="file-preview-label">
-                    <svg viewBox="0 0 16 16"><path d="M4 2h6l4 4v8H4V2z"/><path d="M10 2v4h4"/></svg>
-                    instruction.txt
-                  </div>
-Objective
-Create a Java program that simulates a student payment system using decision structures, 
-loops, and user-defined validation.
-Program Requirements
-1. Create a Java program named:
-    StudentPaymentSystemLastName (Example: StudentPaymentSystemBedis)
-2. Ask the user to input: 
-    o Student Name 
-    o Student ID 
-    o Total Tuition Fee 
-3. Display the menu: 
-    ===== PAYMENT MENU =====
-    1. Pay Tuition
-    2. Check Balance
-    3. Apply Discount
-    4. Exit
-Program Rules
-    General Rules
-      • Use switch statement to process menu options 
-      • Use do-while loop to repeat the program until Exit 
-      • Use nested if statements for validation 
-      • Use a counter variable to track number of transactions 
-    Payment Rules
-      1. Pay Tuition
-        • Ask for payment amount 
-        • Validate: 
-            o If payment > remaining balance → display: Invalid Payment
-            o Else → deduct from balance 
-        • Increment transaction counter 
-      2. Check Balance
-        • Display remaining balance 
-        • Increment transaction counter 
-      3. Apply Discount
-        • Ask user if they are: 
-            o Regular Student 
-            o Scholar 
-        Conditions: 
-            • If Scholar → 20% discount 
-            • If Regular → no discount 
-            • Discount applies only once 
-      4. Exit
-            • Display: 
-                o Student Name 
-                o Total Transactions 
-                o Final Balance 
-            • End program 
- 
- 
-Additional Conditions
-    • Prevent negative balance 
-    • Prevent multiple discount applications 
-    • Show message: No remaining balance if fully paid 
-
-Submission Format
-    • Submit the Java source code file (.java) 
-    • Filename format: 
-Section_LastName_FirstName_StudentPaymentSystem.java
-    • Include screenshots showing: 
-        o User input 
-        o Processing 
-        o Final output
-                </div>
-              </div>
-            </div>
-
-            <button class="accordion-trigger">
-              Answer
-              <svg class="chevron" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <div class="code-block-wrap">
-                  <div class="code-block-bar">
-                    <div class="code-dots"><i></i><i></i><i></i></div>
-                    <span>Main.java</span>
-                  </div>
-                  <pre><code>import java.util.Scanner;
-
-public class BSIT2_4_Cortas_MarkJenel_ATMWithdrawalLimit {
-
-    public static void main(String []args){
-         Scanner in = new Scanner(System.in);
-
-        double balance = 9000.0;
-        int choice = 0;
-        do{
-            System.out.println("====ATM Menu====");
-            System.out.println("1. Check Balance");
-            System.out.println("2. Deposit");
-            System.out.println("3. Withdraw");
-            System.out.println("4. Exit");
-
-            System.out.println("Enter choice: ");
-            choice = in.nextInt();
-
-            switch(choice){
-                case 1:
-                    System.out.println("Balance: " + balance);
-                    break;
-                case 2:
-                    System.out.println("Enter Deposit Amount: ");
-                    double amount = in.nextDouble();
-                    balance = balance + amount;
-                    break;
-                case 3:
-                    System.out.println("Enter amount to withdraw: ");
-                    double withdraw = in.nextDouble();
-
-                    if(withdraw <= 0) {
-                        System.out.println("Transaction Error: Please enter amount bigger than 0.");
-                        break;
-                    }else if(withdraw > 3000){
-                        System.out.println("Transaction Error: Withdrawal Limit Exceeded");
-                        break;
-                    }else if(withdraw > balance){
-                        System.out.println("Transaction Error: Withdrawal Limit Exceeded");
-                        break;
-                    }else{
-                        System.out.println("Withdrawing " + withdraw + " from balance");
-                        balance -= withdraw;
-                        break;
-                    }
-                case 4:
-                    System.out.println("Exiting the program..");
-                    break;
-            }
-        }while(choice != 4);
-    }
-}
-</code></pre>
-                </div>
-              </div>
-            </div>
-
-            <button class="accordion-trigger" style="border-bottom:none;">
-              Explanation / Reflection
-              <svg class="chevron" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <label class="reflection-label">Your reflection</label>
-                <textarea class="reflection-area" placeholder="Write your explanation and learnings for this activity here..."></textarea>
-              </div>
-            </div>
+  <div class="accordion-inner">
+    <p class="reflection-text">
+     
+This project was all about building a reliable Student Payment System that handles real-world scenarios like tuition tracking and discount eligibility. Using a do-while loop combined with a switch statement, I created an interactive menu that stays active until the user is finished, which makes the program feel much more professional. The trickiest part was nesting if statements to enforce "business rules"—like making sure a student can’t pay more than they owe or ensuring the 20% scholar discount is only used once.  I also used a counter variable to keep track of every move the user made, providing a full summary of their transactions at the very end. This activity really showed me how important it is to think ahead and prevent logical errors, like a balance accidentally dropping into the negatives. It was a great exercise in "defensive programming," ensuring the system stays accurate no matter what the user inputs. Ultimately, it helped me get much more comfortable managing multiple data states and keeping a program's logic clean and secure.
+    </p>
+  </div>
+</div>
 
           </div>
         </div>
@@ -765,11 +794,15 @@ public class ExpenseTrackerCortas {
               <svg class="chevron" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="accordion-content">
-              <div class="accordion-inner">
-                <label class="reflection-label">Your reflection</label>
-                <textarea class="reflection-area" placeholder="Write your explanation and learnings for this activity here..."></textarea>
-              </div>
-            </div>
+  <div class="accordion-inner">
+    <p class="reflection-text">
+     
+In this activity, I focused on modularizing my code by breaking the Expense Tracker into specialized void and non-void methods. Instead of keeping everything in the main block, I created functions to handle specific tasks like calculating costs for food and transport, validating budget limits, and displaying the final results. I also added features like user input and a "remaining balance" calculator to make the program more interactive.
+
+The biggest challenge was learning how to pass parameters and handle return values correctly between different parts of the code. It was a major shift in my thinking to realize that I could "outsource" complex calculations to one method and simply call the result elsewhere. This approach made my code much cleaner and easier to troubleshoot, as I could test the logic for each category individually.  Seeing the program successfully compare spending against the budget and return a status message was really satisfying. Overall, this project taught me that breaking a program into smaller, reusable pieces is the key to building scalable and organized software.
+    </p>
+  </div>
+</div>
 
           </div>
         </div>
