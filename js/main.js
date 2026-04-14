@@ -31,8 +31,7 @@ document.querySelectorAll(".nav-links a, .mobile-menu a").forEach((link) => {
   }
 });
 
-// ── Shared accordion toggle (DRY) ──
-// Works for any .accordion-trigger paired with a following .accordion-content
+// ── Shared accordion toggle (Updated for Dynamic Height) ──
 function initAccordions() {
   document.querySelectorAll(".accordion-trigger").forEach((trigger) => {
     trigger.addEventListener("click", () => {
@@ -41,9 +40,17 @@ function initAccordions() {
 
       const isOpen = trigger.classList.contains("open");
 
-      // Toggle this one
-      trigger.classList.toggle("open", !isOpen);
-      content.classList.toggle("open", !isOpen);
+      if (isOpen) {
+        // Close it: Reset max-height to 0
+        trigger.classList.remove("open");
+        content.classList.remove("open");
+        content.style.maxHeight = null;
+      } else {
+        // Open it: Set max-height to the scrollHeight (actual size of images/text)
+        trigger.classList.add("open");
+        content.classList.add("open");
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
     });
   });
 }

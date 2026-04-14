@@ -455,6 +455,9 @@ footer {
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: border-color 0.2s;
+  margin-bottom: 2.5rem !important; /* Forces space between cards */
+    display: block; 
+    overflow: hidden; /* Prevents internal content from leaking out */
 }
 .activity-card:hover { border-color: var(--accent-dim); }
 
@@ -515,12 +518,17 @@ footer {
 }
 
 .accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.38s ease;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out; /* Smooth transition */
+    background: rgba(0, 0, 0, 0.1);
 }
 .accordion-content.open { max-height: 2000px; }
 .accordion-inner { padding: 1.25rem 1.5rem 1.5rem; }
+
+.accordion-content.show {
+    max-height: none; 
+}
 
 /* ── FILE PREVIEW (act 1 & 2) ── */
 .file-preview-box {
@@ -701,4 +709,17 @@ footer {
 .pdf-wrapper embed {
   border: none;
   display: block;
+}
+
+.document-pages {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.doc-page-img {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes tiny gaps at bottom of images */
 }
