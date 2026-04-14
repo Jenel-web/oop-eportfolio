@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — OOP E-Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .page-hero {
+      padding-top: calc(var(--nav-h) + 4rem);
+      padding-bottom: 3rem;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .contact-card {
+      margin-top: 2.5rem;
+      background: #fff;
+      border: 1px solid var(--beige-200);
+      border-radius: 16px;
+      padding: 2.5rem;
+      max-width: 520px;
+    }
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.9rem 0;
+      border-bottom: 1px solid var(--beige-100);
+      font-size: 0.9rem;
+    }
+    .contact-row:last-child { border-bottom: none; }
+    .contact-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--blue-50);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-icon svg { width: 16px; height: 16px; stroke: var(--blue-500); fill: none; stroke-width: 1.8; }
+    .contact-label { font-size: 0.72rem; color: var(--gray-300); text-transform: uppercase; letter-spacing: 0.08em; }
+    .contact-value { color: var(--gray-700); font-weight: 400; }
+    @media (max-width: 500px) {
+      .page-hero { padding-left: 1.25rem; padding-right: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-brand" href="../index.html">OOP E-Portfolio</a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="midterm.html">Midterm</a></li>
+      <li><a href="final.html">Final</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../index.html">Home</a>
+    <a href="midterm.html">Midterm</a>
+    <a href="final.html">Final</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="page-hero fade-up-1">
+    <span class="tag">Get in touch</span>
+    <h1 class="section-title" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.5rem;">Contact</h1>
+    <p style="color:var(--gray-500);font-size:0.95rem;line-height:1.75;max-width:520px;">
+      Feel free to reach out for any questions or feedback about this portfolio.
+    </p>
+
+    <div class="contact-card">
+      <div class="contact-row">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Name</div>
+          <div class="contact-value">Mark Jenel Cortas</div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 11.37 19a19.45 19.45 0 0 1-6.37-6.37 19.79 19.79 0 0 1-2.92-8.45A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Section</div>
+          <div class="contact-value">BSIT 2-4</div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">your.email@example.com</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider" style="margin-top: 2rem;"></div>
+
+  <footer>
+    <span>© 2025 Mark Jenel Cortas · BSIT 2-4</span>
+    <span>Object-Oriented Programming E-Portfolio</span>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

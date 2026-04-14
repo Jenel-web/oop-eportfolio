@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Midterm — OOP E-Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .page-hero {
+      padding-top: calc(var(--nav-h) + 4rem);
+      padding-bottom: 3rem;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .coming-soon {
+      margin-top: 3rem;
+      background: #fff;
+      border: 1px solid var(--beige-200);
+      border-radius: 16px;
+      padding: 3rem;
+      text-align: center;
+      color: var(--gray-500);
+      font-size: 0.95rem;
+      line-height: 1.75;
+    }
+    .coming-soon h3 {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      color: var(--gray-700);
+      margin-bottom: 0.5rem;
+    }
+    @media (max-width: 500px) {
+      .page-hero { padding-left: 1.25rem; padding-right: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-brand" href="../index.html">OOP E-Portfolio</a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="midterm.html">Midterm</a></li>
+      <li><a href="final.html">Final</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../index.html">Home</a>
+    <a href="midterm.html">Midterm</a>
+    <a href="final.html">Final</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="page-hero fade-up-1">
+    <span class="tag">Midterm Period</span>
+    <h1 class="section-title" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.5rem;">Midterm Outputs</h1>
+    <p style="color:var(--gray-500);font-size:0.95rem;line-height:1.75;max-width:520px;">
+      Quizzes, seatwork, activities, and exam outputs from the midterm period — each with code, explanations, and reflections.
+    </p>
+
+    <div class="coming-soon">
+      <h3>Content coming soon</h3>
+      <p>Add your quizzes, seatwork, activities, and exam here.<br/>You can replace this section with your actual midterm outputs.</p>
+    </div>
+  </div>
+
+  <div class="divider" style="margin-top: 2rem;"></div>
+
+  <footer>
+    <span>© 2025 Mark Jenel Cortas · BSIT 2-4</span>
+    <span>Object-Oriented Programming E-Portfolio</span>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
